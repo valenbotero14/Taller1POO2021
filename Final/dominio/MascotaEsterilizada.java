@@ -9,7 +9,11 @@ public class MascotaEsterilizada extends Mascota{
     /**override**/
     @Override
     public String toString() {
-        return "Nombre mascota: " + getNombreM() +"\n" +"Edad: " + getEdad() +"\n"+ "Sexo: " + getSexo() +"\n"+"Castrado: " + isEsterilizado() +"\n"+ "La mascota no es Apta"+"\n";
+        return "Nombre mascota: " + getNombreM() +","+" " +"Sexo: " + getSexo()+","+" "+"Edad: " + getEdad() +","+" " +","+" " +"Esterilizado: " + isEsterilizado() +","+" " + "La mascota no es Apta."+"\n";
+    }
+
+    public String noApta() {
+        return "Nombre mascota: " + getNombreM() +"," +" "+"Sexo: " + getSexo() +","+" " +"Edad: " + getEdad() +","+" "+"Esterilizado: " + isEsterilizado() +","+" " + "La mascota no necesito la operación."+"\n";
     }
 }
 

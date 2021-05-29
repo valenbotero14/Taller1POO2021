@@ -67,18 +67,17 @@ public class Veterinaria {
             if(mascota instanceof MascotaApta && mascota.getSexo().equals("macho") && mascota.getEdad() > 1 && !mascota.isEsterilizado())
             {
                 ((MascotaApta) mascota).operar();
-                System.out.println("Ha sido operada con exito");
-                System.out.println(mascota);
+                System.out.println(((MascotaApta) mascota).operar1());
             }
             else if (mascota.getSexo().equals("hembra") && mascota.getEdad() > 18 && !mascota.isEsterilizado())
             {
                 assert mascota instanceof MascotaApta;
                 ((MascotaApta) mascota).operar();
-                System.out.println("Ha sido operada con exito");
-                System.out.println(mascota);
+                System.out.println(((MascotaApta) mascota).operar1());
             }
             else if (mascota.isEsterilizado()){
-                System.out.println(mascota);
+                assert mascota instanceof MascotaEsterilizada;
+                System.out.println(((MascotaEsterilizada) mascota).noApta());
             }
         });
     }

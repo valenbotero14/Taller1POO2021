@@ -5,6 +5,7 @@ import Final.dominio.Veterinaria;
 public class AppVeterinaria {
     public static void main(String[] args) {
         Veterinaria veterinaria = new Veterinaria();
+        System.out.println("Mascotas para revisión......");
         System.out.println(veterinaria.revisarMascota("Sasha", "hembra", 28, true));
         System.out.println(veterinaria.revisarMascota("Saia", "hembra", 21, false));
         System.out.println(veterinaria.revisarMascota("Diablo", "macho", 10, false));
